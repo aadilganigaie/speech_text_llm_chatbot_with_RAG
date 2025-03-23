@@ -227,8 +227,8 @@ def init_models():
 
 @st.cache_resource
 def init_STT_model():
-    endpoint = "https://mywai-openai.openai.azure.com/openai/deployments/whisper/audio/translations?api-version=2024-06-01"
-    key = "83msI0RzecQTAiN6ay1cKOvu4EOiMafnhzBw8FfxVOzQ3ManWsVSJQQJ99AJAC5RqLJXJ3w3AAABACOGh0s0"
+    endpoint = "***"
+    key = "83msI0RzecQT****"
     version = "2024-06-01"
     name = "whisper"
     parser = AzureOpenAIWhisperParser(api_key=key, azure_endpoint=endpoint, api_version=version, deployment_name=name)
@@ -239,8 +239,8 @@ def init_STT_model():
 def init_TTS_model():
     """Initialize Azure TTS configuration"""
     return {
-        "endpoint": "https://agan-m4jr7rp0-swedencentral.cognitiveservices.azure.com/openai/deployments/tts/audio/speech",
-        "api_key": "FD3zRAvrda5nxcoKaisV41Nl8zQIVmXodKX8C2jteMWGpEbXSEg3JQQJ99ALACfhMk5XJ3w3AAAAACOGLiYx",
+        "endpoint": "https://****,
+        "api_key": "FD3zRAvrda5***",
         "api_version": "2024-05-01-preview"
     }
 
@@ -374,7 +374,7 @@ def record_audio():
 # Database connection
 @st.cache_resource
 def init_db():
-    connection_string = "postgresql://mywai:Bth-12345@localhost:5432/experiment"
+    connection_string = "postgresql://***:****@localhost:5432/****"
     return create_engine(connection_string)
 
 def stream_data(placeholder, text):
