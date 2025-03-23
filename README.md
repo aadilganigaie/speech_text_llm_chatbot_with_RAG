@@ -1,4 +1,4 @@
-# speech_text_llm_chatbot_with_RAG
+# Speech and Text LLM Chatbot with RAG
 
 AI Document Assistant
 Overview
